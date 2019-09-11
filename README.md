@@ -4,6 +4,7 @@ Emailer is an advanced & premium-quality email sending plugin. It allows you to 
 ## Prerequisites
 - Java 8 or above.
 - A spigot server
+- Have enabled less secure mode on your gmail account (if using gmail)
 
 ## Installation
 In order to intall and get this plugin to work in your server, you'll first have to buy it from https://www.spigotmc.org/resources/emailer.66184/. You can then find a more documented guide here https://github.com/LagBug/Emailer/wiki/Installation
