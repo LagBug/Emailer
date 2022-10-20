@@ -1,0 +1,16 @@
+main: me.lagbug.emailer.spigot.Emailer 
+name: Emailer
+version: '${version}'
+description: Send real emails to your players.
+softdepend: [PlaceholderAPI]
+author: LagBug
+commands:
+ emailer:
+  description: The main command for the emailer plugin. Contains admin commands mostly.
+ setemail:
+  description: Sends a verification code to the player's email.
+ verify:
+  aliases: [auth]
+  description: Checks the verification code sent with the one typed.
+ unsubscribe:
+  description: Unsubscribes a player from any emails.

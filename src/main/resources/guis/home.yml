@@ -1,0 +1,27 @@
+title: "Emailer > Home GUI"
+slots: 9
+refresh: 20
+contents:
+  0:
+    item: "NAME_TAG;1;0"
+    name: "&fSend an Email"
+    action: "SEND_EMAIL"
+    lore:
+     - "&7Click here to select a template and"
+     - "&7send an email to anyone you want!"
+  1:
+    item: "WOOL;1;3"
+    name: "&fPlayer Manager"
+    action: "GOTO_PLAYER_MANAGER"
+    lore:
+     - "&7Click here to go to the player manager!"
+  8:
+    item: "PAPER;1;0"
+    action: "RELOAD_PLUGIN"
+    name: "&bPlugin information"
+    lore:
+     - "&7Some basic information about the plugin. Click here"
+     - "&7to reload the plugin's data."
+     - ""
+     - "&7Author: &6%plugin_author%"
+     - "&7Version: &6%plugin_version% &8(&a%version_status%&8)"

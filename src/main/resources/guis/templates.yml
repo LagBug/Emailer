@@ -1,0 +1,4 @@
+title: "Emailer > Templates"
+slots: DYNAMIC
+refresh: 20
+contents: {} #The contents are automatically filled by the plugin

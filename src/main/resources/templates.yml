@@ -1,0 +1,40 @@
+verificationTemplate: "verify" #The template used when verifying users
+
+emails: #The email templates to be used
+  "verify": #The id of the template, used to identify it in-game
+    subject: "Verify your minecraft account" #The subject of the email
+    type: HTML #The type of the email. Available types are [HTML, TEXT]
+    html: "verify.html" #If the type is HTML, which file should be used?
+    text: #If the type is TEXT, what should the email contain?
+     - "Hey there %player%,"
+     - ""
+     - "This email is sent to you due to your verification request on our server."
+     - "It is a pleasure to have you as a registered email user and we really appreciate this."
+     - "In order to verify yourself, please, go in our server and type /auth %code%"
+  "update":
+    subject: "An update has arrived"
+    type: HTML
+    html: "update.html"
+    text:
+     - "Hey there %player%,"
+     - ""
+     - "An update has arrived. Check our forums (https://spigotmc.org/forums/)"
+     - "for a full changelog. Enjoy!"
+  "event":
+    subject: "Invitation to a Minecraft event"
+    type: HTML
+    html: "event.html"
+    text:
+     - "Hi, %player%,"
+     - ""
+     - "You have been invited to participate in our Bedwars event"
+     - "with popular YouTubers like Skeppy, DanTDM, & more!"
+  "sale":
+    subject: "20% OFF ALL OF OUR RANKS"
+    type: HTML
+    html: "coupon.html"
+    text:
+     - "Hey there %player%,"
+     - ""
+     - "A new sale, which has all of our ranks 20% off is currently"
+     - "available through our store. Check it out!"

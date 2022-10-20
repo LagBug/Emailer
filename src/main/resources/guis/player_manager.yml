@@ -1,0 +1,32 @@
+title: "Emailer > Player Manager"
+slots: 9
+refresh: 20
+contents:
+  0:
+    item: "NAME_TAG;1;0"
+    name: "&bPlayer Information"
+    lore:
+     - "&7A variety of information about this player"
+     - ""
+     - "&bPlayer:"
+     - " &7Linked: &a%player_linked%"
+     - " &7Email Address: &6%player_email%"
+  2:
+    item: "WOOL;1;1"
+    name: "&fForce Verify"
+    action: "FORCE_VERIFY"
+    lore:
+     - "&7Click here to forcefully link this"
+     - "&7player with an email address."
+  3:
+    item: "WOOL;1;2"
+    name: "&fUn-Verify"
+    action: "UN_VERIFY"
+    lore:
+     - "&7Click here to unverify this player"
+     - "&7with their linked email address."
+  8:
+    item: "BARRIER;1;9"
+    name: "&fGo Back"
+    lore: {}
+    action: "GO_BACK"

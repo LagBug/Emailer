@@ -1,0 +1,52 @@
+# Thank you so much for purchasing my plugin,
+# it really means a lot to me!
+#  _____                 _ _           
+# | ____|_ __ ___   __ _(_) | ___ _ __ 
+# |  _| | '_ ` _ \ / _` | | |/ _ \ '__|
+# | |___| | | | | | (_| | | |  __/ |   
+# |_____|_| |_| |_|\__,_|_|_|\___|_|   
+#
+#
+# This is a file to help you configure settings to your likings. It is recommended
+# to leave everything as it is, but, if you know what you're doing, feel free to change
+# it. If you do not understand what something does, please leave it as it is and ask for help.
+
+languageFile: "en_US" #The language file that should be used. Use the file name without .yml from the /lang/ folder
+prefix: "&bEmailer &7>" #The prefix that is then replaced in the language file by %prefix% 
+updateChecker: true #Specifies whether or not the update checker should work. If set to false, your server will start up faster
+debug: false #If set to true, everything that is happening and is related to the plugin will be logged in the console
+saveDataEvery: 10 #Specifies every how many minutes the data (verified emails, pending requests etc.) should be saved
+
+storage: #Information on how user data should be saved 
+  type: "FLAT" #Available types are [MYSQL, FLAT].
+  mysql:
+    host: ""
+    database: ""
+    username: ""
+    password: ""
+    port: 3306
+    statement: "?autoReconnect=true&useUnicode=true"
+    tables:
+      verified: "verified_emails"
+
+server: #Information about the server used to send emails. If you don't know what that is, just use the default one.
+  host: "smtp.gmail.com" #The host used to send the email.
+  port: 587 #The port used to send emails. 587 is usually the default one. 
+
+email: #The login information to your email. This is private and should NOT be shared with anyone.
+  address: "example@domain.com" #The email, for example "google@gmail.com"
+  password: "password" #And the password. If you're using Gmail, create an App Password and use that (https://support.google.com/accounts/answer/185833?hl=en)
+
+security: #Protect your server through some simple options
+  type: "BLACKLIST" #The type of security. Available types: ["WHITELIST", "BLACKLIST"]
+  list: #The list of the regex's to be used
+    - '\b[\w\.-]+@((?!mcspam|dumbmail|).)[\w\.-]+\.\w{2,4}\b'
+
+onVerificationRequest:
+  - "TITLE;;&bEmail sent;;&7An email has been sent;;30"
+
+onVerify: #Specify what happens when someone verifies their email successfully.
+  - "TITLE;;&bSuccess;;&7Your email has been linked;;30"
+  
+onUnsubscribe: #Specify what happens when someone un-subscribes their email 
+  - "TITLE;;&bSuccess;;&7You are now un-subscribed;;30"

@@ -1,0 +1,28 @@
+title: "Emailer > Recipient"
+slots: 9
+refresh: 20
+contents:
+  0:
+    item: "WOOL;1;3"
+    name: "&fSend to everyone"
+    action: "SEND_TO_EVERYONE"
+    lore:
+     - "&7Click here to select a template and"
+     - "&7send an email to anyone you want!"
+  1:
+    item: "WOOL;1;4"
+    name: "&fSend to everyone online"
+    action: "SEND_TO_ONLINE"
+    lore:
+     - "&7Click here to go to the player manager!"
+  2:
+    item: "WOOL;1;5"
+    action: "SEND_TO_PLAYER"
+    name: "&fSend to player"
+    lore:
+     - "&7Send an email to a specific online player."
+  8:
+    item: "BARRIER;1;9"
+    name: "&fGo Back"
+    lore: {}
+    action: "GO_BACK"

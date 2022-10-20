@@ -1,0 +1,38 @@
+general:
+  updateAvailable: "%prefix% An update was found, click this message."
+  notification: "%prefix% Hey! You've got an email. Check your inbox."
+
+commands:
+  verify:
+    success: "%prefix% You have successfully verified your email."
+    already: "%prefix% The specified player (&b%player%&7) is already verified."
+    notVerified: "%prefix% The specified player (&b%player%&7) has not verified their account."
+    force: "%prefix% Successfully force verified (&b%player%&7) &7with (&b%address%&7)."
+    noEmail: "%prefix% No email has been sent to you, please use &b/setemail &7first."
+  unverify:
+    success: "%prefix% The specified player (&b%player%&7) is now un-verified."
+  unsubscribe:
+    success: "%prefix% Successfully unsubscribed from any emails."
+  pending:
+    success: "%prefix% An email with a verification code has been sent to &b%email_address%&7."
+    already: "%prefix% You have already received an email."
+  search:
+    found: "%prefix% (&b%input%&7) is verified with (&b%output%&7)."
+    notFound: "%prefix% (&b%input%&7) could not be matched with any player/email."
+  email:
+    sent: "%prefix% An email has been sent to &b%recipients% &7recipient(s). If not, please check the console for any errors." 
+  reload:
+    success: "%prefix% The configuration files were successfully reloaded."
+
+errors:
+  onlyPlayers: "%prefix% Only players can use this command."
+  noPermissions: "%prefix% You do not have enough permissions to do this."
+  playerNull: "%prefix% The specified player does not seem to be online."
+  wrongUsage: "%prefix% The right usage is &b%usage%"
+  wrongCode: "%prefix% The code you entered does not match the one we sent you."
+  wrongEmail: "%prefix% The email address you entered seems to be invalid."
+  failed: "%prefix% Something went wrong and the email could not be sent."
+  templateNotFound: "%prefix% A template with that id could not be found."
+  empty: "%prefix% There are currently no verified users to send an email."
+  already: "%prefix% You have already verified your email."
+  blocked: "%prefix% This email is currently blocked. Contact an administrator if you think this is an error."
