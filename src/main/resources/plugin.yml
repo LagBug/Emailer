@@ -9,8 +9,8 @@ commands:
   description: The main command for the emailer plugin. Contains admin commands mostly.
  setemail:
   description: Sends a verification code to the player's email.
- verify:
-  aliases: [auth]
+ verifyemail:
+  aliases: [emailverify]
   description: Checks the verification code sent with the one typed.
  unsubscribe:
   description: Unsubscribes a player from any emails.

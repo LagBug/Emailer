@@ -19,7 +19,7 @@ public class VerifyCommand extends SpigotCommand {
 	
 	public VerifyCommand() {
 		super(Permissions.VERIFY, 1, (SubCommand) null);
-		super.setUsage("/verify <code>");
+		super.setUsage("/verifyemail <code>");
 	}
 
 	@Override

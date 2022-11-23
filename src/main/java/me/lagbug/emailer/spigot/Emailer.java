@@ -55,7 +55,7 @@ public class Emailer extends JavaPlugin {
 		// We register our commands
 		getCommand("emailer").setExecutor(new EmailerCommand());
 		getCommand("setemail").setExecutor(new SetEmailCommand());
-		getCommand("auth").setExecutor(new VerifyCommand());
+		getCommand("verifyemail").setExecutor(new VerifyCommand());
 		getCommand("unsubscribe").setExecutor(new UnsubscribeCommand());
 
 		// We register our events as well
