@@ -22,7 +22,7 @@ public class EmailerPlaceholders extends PlaceholderExpansion {
 
 	@Override
 	public String getIdentifier() {
-		return "player";
+		return "emailer";
 	}
 
 	@Override
