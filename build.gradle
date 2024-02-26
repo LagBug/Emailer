@@ -1,5 +1,5 @@
 plugins {
-    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
     id 'java'
 }
 
@@ -16,7 +16,6 @@ shadowJar {
 
 repositories {
     mavenCentral()
-    mavenLocal()
 
     maven {
         name = 'spigotmc-repo'
@@ -34,7 +33,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'org.spigotmc:spigot:1.16.1-R0.1-SNAPSHOT'
+    compileOnly group: 'org.spigotmc', name: 'spigot-api', version: '1.16.1-R0.1-SNAPSHOT', changing: true
     compileOnly 'me.clip:placeholderapi:2.11.4'
     implementation 'com.sun.mail:javax.mail:1.6.2'
     implementation 'javax.activation:activation:1.1.1'
