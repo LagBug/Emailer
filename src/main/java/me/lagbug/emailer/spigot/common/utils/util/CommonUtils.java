@@ -13,7 +13,6 @@ import java.util.Random;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.spigotmc.SpigotConfig;
 
 public class CommonUtils {
 
@@ -119,7 +118,20 @@ public class CommonUtils {
 	}
 
 	public static boolean isBungee() {
-		return SpigotConfig.bungee && (!(Bukkit.getServer().getOnlineMode()));
+		boolean bungee = false;
+		
+		try {
+            Class<?> spigotConfigClass = Class.forName("org.spigotmc.SpigotConfig");
+            Field bungeeField = spigotConfigClass.getDeclaredField("bungee");
+            bungeeField.setAccessible(true);
+            bungee = bungeeField.getBoolean(null);
+
+        } catch (ClassNotFoundException | NoSuchFieldException | IllegalAccessException e) {
+        	System.err.println("Reflection failed for isBungee method in CommonUtils (me.lagbug).");
+            e.printStackTrace();
+        }
+		
+		return bungee && (!(Bukkit.getServer().getOnlineMode()));
 	}
 
 	public static void log(String... text) {
